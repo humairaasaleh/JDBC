@@ -38,12 +38,14 @@ public class Runner {
 //		System.out.println(setup.readByIdPrepared(13));
 		
 //		READ ALL
-		System.out.println(setup.readAll());
+//		System.out.println(setup.readAll());
 		
 //		READ LATEST
 //		System.out.println(setup.readLatest());
 		
-
+		
+		
+		
 
 	}
 

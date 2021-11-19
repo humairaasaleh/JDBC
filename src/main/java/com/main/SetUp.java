@@ -113,10 +113,10 @@ public class SetUp {
 		try (Connection conn = DriverManager.getConnection(jdbcConnectionURL, username, password);
 				PreparedStatement statement = conn.prepareStatement("SELECT * FROM Animals WHERE AnimalId=?")) {
 			statement.setInt(1, animalId);
-			ResultSet resultSet= statement.executeQuery();
+			ResultSet resultSet = statement.executeQuery();
 			resultSet.next();
 			return animalsFromResultSet(resultSet);
-			
+
 		} catch (SQLException e) {
 			LOGGER.error(e.getMessage());
 		}
@@ -207,4 +207,5 @@ public class SetUp {
 			LOGGER.error(e.getMessage());
 		}
 	}
+
 }
